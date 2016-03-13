@@ -1,0 +1,18 @@
+Place inside tf/custom.
+
+Currently only supports 16:9 resulotions.
+
+To use overrides just copy the file you want from
+the overrides folder and replace the file you want changed!
+
+Transparent Viewmodels are now in the overrides folder.
+
+If Transparent viewmodels don't work, add:
+
+mat_motion_blur_enabled 1 //afaik the only sure-fire way to keep refract masking on
+mat_motion_blur_strength 0 //effectively disables motion blur, personal choice + motion blur gets masked and looks bad with refract masking
+mat_disable_bloom 1 //disables bloom so refract masking doesn't create a dark rectangle over light materials
+mat_colcorrection_disableentities 1
+mat_colorcorrection 0
+
+To your autoexec!
